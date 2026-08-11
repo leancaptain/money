@@ -1,0 +1,37 @@
+{
+    "name": "leancaptain/money",
+    "description": "A small, framework-agnostic PHP money value object with Laravel integration.",
+    "keywords": ["money", "money casts", "leancaptain", "laravel", "value object", "PHP"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahmudul Hasan",
+            "email": "mahmudul.bd.90@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4"
+    },
+    "require-dev": {
+        "pestphp/pest": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeanCaptain\\Money\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LeanCaptain\\Money\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest --compact --bail"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
