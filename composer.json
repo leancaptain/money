@@ -1,7 +1,7 @@
 {
     "name": "leancaptain/money",
     "description": "A small, framework-agnostic PHP money value object for safe monetary calculations.",
-    "keywords": ["money", "money casts", "leancaptain", "laravel", "value object", "PHP"],
+    "keywords": ["money", "currency", "monetary", "decimal", "value object", "finance"],
     "type": "library",
     "license": "MIT",
     "authors": [
