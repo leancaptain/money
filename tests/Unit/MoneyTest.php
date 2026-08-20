@@ -449,7 +449,6 @@ it('serializes money to json', function () {
 
     expect($money->jsonSerialize())->toBe([
         'amount' => '1250.50',
-        'minor_amount' => 125050,
         'currency' => 'BDT',
     ]);
 });
@@ -463,7 +462,6 @@ it('can be encoded directly as json', function () {
         flags: JSON_THROW_ON_ERROR,
     ))->toBe([
         'amount' => '1250.50',
-        'minor_amount' => 125050,
         'currency' => 'BDT',
     ]);
 });
@@ -486,7 +484,6 @@ it('serializes consumer-defined currencies', function () {
 
     expect($money->jsonSerialize())->toBe([
         'amount' => '12.345',
-        'minor_amount' => 12345,
         'currency' => 'ABC',
     ]);
 });

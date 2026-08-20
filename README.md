@@ -64,13 +64,20 @@ Currency::JPY->minorUnit(); // 0
 
 ## Built-in Currencies
 
-The initial release intentionally provides a small currency set:
+The package ships with a set of commonly used currencies:
 
+* AED
+* AUD
 * BDT
-* USD
+* CAD
+* CNY
 * EUR
 * GBP
+* INR
 * JPY
+* SAR
+* SGD
+* USD
 
 Applications are not required to use the built-in `Currency` enum.
 
@@ -299,7 +306,6 @@ Produces:
 ```json
 {
     "amount": "1250.50",
-    "minor_amount": 125050,
     "currency": "BDT"
 }
 ```

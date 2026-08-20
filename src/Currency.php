@@ -11,6 +11,13 @@ enum Currency: string implements CurrencyContract
     case EUR = 'EUR';
     case GBP = 'GBP';
     case JPY = 'JPY';
+    case INR = 'INR';
+    case AED = 'AED';
+    case SAR = 'SAR';
+    case SGD = 'SGD';
+    case AUD = 'AUD';
+    case CAD = 'CAD';
+    case CNY = 'CNY';
 
     public function code(): string
     {

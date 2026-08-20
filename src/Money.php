@@ -196,7 +196,6 @@ final readonly class Money implements JsonSerializable, Stringable
     /**
      * @return array{
      *     amount: string,
-     *     minor_amount: int,
      *     currency: string
      * }
      */
@@ -204,7 +203,6 @@ final readonly class Money implements JsonSerializable, Stringable
     {
         return [
             'amount' => $this->toDecimal(),
-            'minor_amount' => $this->minorAmount,
             'currency' => $this->currency->code(),
         ];
     }
